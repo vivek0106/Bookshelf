@@ -1,0 +1,53 @@
+body{
+    
+}
+span.up {
+    position: relative;
+    top: 2px;
+    left: 2px;
+    font-weight: 500;
+    color: black;
+    padding: 5px;
+    font-size: 0.8rem;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
+  span.label {
+  font-size: 1rem;
+  position: relative;
+  top: 30px;
+  left: 10px;
+  color: grey;
+}
+
+span.right{
+    left:100px;
+}
+label{
+    position: relative;
+    top: 2px;
+    left: 2px;
+    font-weight: 500;
+    color: black;
+    padding: 5px;
+    font-size: 0.8rem;
+    margin:0px ;
+}
+
+.hide{
+    display: none;
+}
+.bookList{
+    height: 80vh;
+    overflow-y: auto;
+}
+
+#bookDetails{
+    height: 80vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.page{
+    margin-top: 20px;
+}

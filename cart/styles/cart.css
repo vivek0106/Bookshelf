@@ -1,0 +1,92 @@
+.cartItem {
+  padding: 5px;
+}
+
+.cartItem p {
+  margin: 0px;
+  font-size: 0.8rem;
+}
+
+.cartItem button {
+  margin: 5px;
+}
+
+.placeOrderBtn {
+  background-color: #2f1613;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 8px 20px;
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+}
+
+.placeOrderBtn:focus {
+  background-color: #523d3b;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 8px 20px;
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+}
+
+.placeOrderBtn:hover {
+  background-color: #523d3b;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 8px 20px;
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+}
+
+.payNowBtn {
+  background-color: #2f1613;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 8px 20px;
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+}
+
+.payNowBtn:focus {
+  background-color: #523d3b;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 8px 20px;
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+}
+
+.payNowBtn:hover {
+  background-color: #523d3b;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 8px 20px;
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+}
+
+#paymentMode {
+  padding: 8px;
+  margin: 5px;
+  background-color: #FCF8D1;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=cart.css.map */

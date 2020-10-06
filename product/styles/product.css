@@ -1,0 +1,122 @@
+table td {
+  padding: .35rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+table tr td {
+  font-size: 0.9rem;
+  border-top: 0px;
+}
+
+td {
+  display: table-cell;
+  vertical-align: inherit;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 2px;
+}
+
+.buyNowBtn {
+  background-color: #2f1613;
+  color: white;
+  font-weight: 600;
+  font-size: 0.8rem;
+  padding: 8px 16px;
+  border: 2px solid #2f1613;
+  border-radius: 8px;
+}
+
+.addToCartBtn {
+  background-color: white;
+  color: #2f1613;
+  font-weight: 600;
+  font-size: 0.8rem;
+  padding: 8px 16px;
+  border: 2px solid #2f1613;
+  border-radius: 8px;
+}
+
+.wishlistBtn {
+  background-color: white;
+  color: #2f1613;
+  font-weight: 600;
+  font-size: 0.8rem;
+  padding: 8px 16px;
+  border: 0px;
+  border-radius: 8px;
+}
+
+.reviewSection {
+  background-color: #2f1613;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.reviewSection .reviewForm {
+  background-color: #523d3b;
+  border-radius: 8px;
+  padding: 30px;
+}
+
+.reviewSection .reviewForm .reviewBtn {
+  background-color: #2f1613;
+  color: white;
+  font-weight: 600;
+  font-size: 0.8rem;
+  padding: 8px 16px;
+  border: 2px solid #2f1613;
+  border-radius: 8px;
+}
+
+.reviewSection .reviewForm textarea {
+  background-color: #ffffffaa;
+  border: 0px;
+  color: black;
+}
+
+.reviewSection .reviewForm textarea:focus {
+  border: 1px solid #2f1613;
+}
+
+.reviewSection .userReviewWrapper .userReview {
+  background-color: #523d3b;
+  margin: 10px 20px;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.reviewSection .userReviewWrapper .userReview p {
+  margin: 0px;
+}
+
+@media (min-width: 1024px) {
+  .reviewSection {
+    height: auto;
+    overflow-y: hidden;
+    padding: 30px;
+  }
+  .reviewSection .reviewForm {
+    max-height: 45vh;
+  }
+  .userReviewWrapper {
+    margin: 15px;
+  }
+}
+/*# sourceMappingURL=product.css.map */

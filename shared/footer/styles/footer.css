@@ -1,0 +1,77 @@
+.footerWrapper {
+  overflow-x: hidden;
+}
+
+.footerWrapper .footer {
+  background-color: #FCF8D1;
+  padding: 10px;
+  font-size: 0.9rem;
+  width: 100vw;
+  color: #333A56;
+}
+
+.footerWrapper .footer h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.footerWrapper .footer h5 {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.footerWrapper .footer form input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 0px 10px;
+  border: unset;
+  background-color: #ccc690;
+  border-radius: 4px;
+  height: 1.8rem;
+}
+
+.footerWrapper .footer form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 0px 10px;
+  border: unset;
+  background-color: #ccc690;
+  border-radius: 4px;
+}
+
+.footerWrapper .footer form button {
+  width: 100%;
+  background-color: #333A56;
+  color: #FCF8D1;
+  height: 1.8rem;
+  font-weight: 600;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  border: unset;
+}
+
+.footerWrapper .lastLine {
+  background-color: #ccc690;
+  padding: 10px;
+  font-size: 0.6rem;
+  text-align: center;
+  width: 100%;
+  margin: unset;
+}
+
+@media (min-width: 1024px) {
+  .footer i {
+    font-size: 1.5rem;
+    padding: 0px 10px;
+  }
+  .footer form input {
+    height: 2rem;
+    margin-bottom: 15px;
+  }
+  .footer form button {
+    height: 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

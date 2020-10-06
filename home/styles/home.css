@@ -1,0 +1,317 @@
+.cover {
+  background-image: url(../img/cover.png);
+  background-size: cover;
+  height: 60vh;
+  color: #FCF8D1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cover h1 {
+  font-weight: 700;
+  padding: 0px 20px;
+  font-size: 2.2rem;
+  text-align: center;
+  text-shadow: 0px 0px 30px black;
+}
+
+.cover h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-style: italic;
+  text-shadow: 0px 0px 40px black;
+}
+
+.arrow {
+  height: 20px;
+  width: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #efefef;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.arrow i {
+  font-weight: 700;
+}
+
+.arrow:hover {
+  cursor: pointer;
+  background-color: #afafaf;
+}
+
+.recommended h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.genres h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.series h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.recomItemWrapper .recomItem {
+  scroll-behavior: smooth;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
+  scrollbar-width: thin;
+  scrollbar-width: auto;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+}
+
+.recomItemWrapper .recomItem a img {
+  scroll-snap-align: start;
+  margin: 20px;
+  max-height: 160px;
+  min-width: 110px;
+}
+
+.recomItem::-webkit-scrollbar {
+  display: none;
+}
+
+.genres {
+  background-color: #efefef;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.genres .container .row {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.genres .container .row .genreItemWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+  -ms-scroll-snap-type: mandatory;
+      scroll-snap-type: mandatory;
+}
+
+.genres .container .row .genreItemWrapper .genreItem {
+  scroll-snap-align: start;
+  background-color: #333A56;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100px;
+  min-width: 100px;
+  margin: 10px 10px;
+  border-radius: 16px;
+  letter-spacing: 1px;
+}
+
+.genres .container .row .genreItemWrapper .genreItem a {
+  color: #FCF8D1;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.genres .container .row .genreItemWrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.series {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.series .container .row {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.series .container .row .seriesItemWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+  -ms-scroll-snap-type: mandatory;
+      scroll-snap-type: mandatory;
+}
+
+.series .container .row .seriesItemWrapper .seriesItem {
+  text-align: center;
+  scroll-snap-align: start;
+  background-color: #ccc690;
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100px;
+  min-width: 100px;
+  margin: 10px 10px;
+  border-radius: 16px;
+  letter-spacing: 1px;
+}
+
+.series .container .row .seriesItemWrapper .seriesItem a {
+  font-weight: 600;
+  color: #333A56;
+}
+
+.series .container .row .seriesItemWrapper::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .recomItemWrapper .recomItem a img {
+    scroll-snap-align: start;
+    margin: 20px;
+    margin-left: 100px;
+    max-height: 190px;
+    min-width: 140px;
+  }
+  .recommended h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 15px;
+  }
+  .genres h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 15px;
+  }
+  .series h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 15px;
+  }
+  .genres {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  .genres .container .row {
+    margin: 0px 10px;
+  }
+  .genres .container .row .genreItemWrapper .genreItem {
+    min-height: 120px;
+    min-width: 120px;
+    margin: 0px 30px;
+  }
+  .series {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .series .container .row {
+    margin: 0px 10px;
+  }
+  .series .container .row .seriesItemWrapper .seriesItem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 110px;
+    min-width: 110px;
+    margin: 0px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .recomItem a img {
+    scroll-snap-align: start;
+    margin: 20px;
+    margin-left: 120px;
+    min-height: 220px;
+    min-width: 150px;
+  }
+  .recommended h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 30px;
+  }
+  .genres h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 30px;
+  }
+  .series h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 30px;
+  }
+  .cover h1 {
+    font-size: 2.6rem;
+  }
+  .cover h3 {
+    font-size: 1.7rem;
+  }
+  .genres {
+    background-color: #efefef;
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+  .genres .container .row .genreItemWrapper .genreItem {
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 24px;
+    min-height: 170px;
+    min-width: 170px;
+    padding: 5px;
+  }
+  .series {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .series .container .row .seriesItemWrapper .seriesItem {
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 24px;
+    min-height: 160px;
+    min-width: 160px;
+    padding: 10px;
+    margin: 10px 20px;
+  }
+}
+/*# sourceMappingURL=home.css.map */

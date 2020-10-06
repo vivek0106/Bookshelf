@@ -1,0 +1,43 @@
+@import "../../color/color.scss";
+body{
+    overflow-y: auto;
+}
+.product{
+   .bname{
+       font-weight:600;
+   }
+   .authorName{
+       font-size: 0.9rem;
+   }
+  
+}
+.product:hover{
+    cursor: pointer;
+}
+.cartBtn{
+    background-color: $veryLightBrown;
+    color: white;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 6px 16px;
+    border: 0px;
+    border-radius: 4px;    
+}
+.cartBtn:hover{
+    background-color: $lightBrown;
+}
+.wishlistBtn{
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.bookList{
+    height: 75vh;
+    margin: 20px;
+    overflow-y: auto;
+}
+@media(max-width:550px){
+    .cartBtn{
+        font-size: 0.8rem;
+    }
+}

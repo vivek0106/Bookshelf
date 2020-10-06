@@ -1,0 +1,78 @@
+@import "../../../color/color.scss";
+.footerWrapper{
+    overflow-x: hidden;
+    .footer{
+        background-color: $lightYellow;
+        padding: 10px;
+        font-size: 0.9rem;
+        width: 100vw;
+        color: $darkBlue;
+        h2{
+            font-weight:700;
+            font-size:1.5rem;
+      
+        }
+        h5{
+            font-weight: 700;
+            font-size: 1rem;
+        }
+        form{
+            input{
+                width: 100%;
+                margin-bottom: 10px;
+                padding: 0px 10px;
+                border:unset;
+                background-color: $darkYellow;
+                border-radius: 4px;
+                height: 1.8rem;
+            }
+            textarea{
+                width: 100%;
+                margin-bottom: 10px;
+                padding: 0px 10px;
+                border:unset;
+                background-color: $darkYellow;
+                border-radius: 4px;
+               
+            }
+            button{
+                width: 100%;
+                background-color: $darkBlue;
+                color: $lightYellow;
+                height: 1.8rem;
+                font-weight: 600;
+                font-size: 0.8rem;
+                border-radius: 4px;
+                border: unset;
+            }
+        }
+      }
+      .lastLine{
+          background-color: $darkYellow;
+          padding:10px;
+          font-size: 0.6rem;
+          text-align: center;
+          width: 100%;
+          margin: unset;
+      }
+}
+
+  @media(min-width:1024px){
+    .footer{
+        i{
+            font-size: 1.5rem;
+            padding: 0px 10px;
+        }
+        form{
+            input{
+                height: 2rem;
+                margin-bottom: 15px;
+            }
+            button{
+                height: 2rem;
+                font-size: 1rem;
+                font-weight: 700;
+            }
+        }
+    }
+  }

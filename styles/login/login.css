@@ -1,0 +1,192 @@
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-image: url("../../img/bg4.png");
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+#content {
+  margin-top: 60px;
+}
+
+#content .loginForm {
+  padding: 20px 30px;
+  margin: 30px 10px;
+  background-color: #000000a0;
+  border-radius: 8px;
+}
+
+#content span.label {
+  font-size: 1rem;
+  position: relative;
+  top: 30px;
+  left: 10px;
+  color: grey;
+}
+
+#content i.fa-eye {
+  position: relative;
+  top: -30px;
+  left: 90%;
+}
+
+#content i.fa-eye-slash {
+  display: none;
+  position: relative;
+  top: -30px;
+  left: 90%;
+}
+
+#content span.up {
+  position: relative;
+  top: 2px;
+  left: 2px;
+  font-weight: 400;
+  color: white;
+  padding: 5px;
+  font-size: 0.9rem;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+#content .form-group {
+  margin-bottom: 0px;
+}
+
+#content .loginBtn {
+  background-color: #ccc690;
+  border: 0px;
+  color: #333A56;
+  font-weight: 700;
+}
+
+#content .signupBtn {
+  border: 0px;
+  color: #FCF8D1;
+  background-color: #333A56;
+}
+
+#content .gloginBtn {
+  border: 0px;
+  color: #FCF8D1;
+  background-color: #333A56;
+}
+
+#content .error {
+  color: #ffa6a6;
+  font-size: 0.9rem;
+  padding: 10px;
+  margin: 0px;
+  display: none;
+  position: relative;
+  bottom: 10px;
+}
+
+#content .forgotPassLink {
+  cursor: pointer;
+}
+
+#content .forgotPassLink:hover {
+  text-decoration: underline;
+}
+
+#content .modal {
+  background-color: #0000007a;
+}
+
+#content .modal .form-control {
+  margin-bottom: 15px;
+}
+
+#content .modal span.up {
+  color: #444;
+  font-weight: 500;
+  top: -3px;
+}
+
+#content .modal input {
+  color: black;
+  font-weight: 400;
+}
+
+#content .modal .nextBtn {
+  display: block;
+  background-color: #ccc690;
+  color: black;
+  padding: 6px;
+  margin-left: auto;
+  border-radius: 5px;
+  width: 32%;
+  border: 2px solid #ccc690;
+}
+
+#content .modal .backBtn {
+  color: black;
+  border: 2px solid #ccc690;
+  padding: 6px;
+  border-radius: 5px;
+  width: 20%;
+  margin-left: 45%;
+}
+
+#content .modal .signupSubmitBtn {
+  background-color: #333A56;
+  border: 2px solid #333A56;
+  color: #FCF8D1;
+  border: 0px;
+  padding: 8px;
+  border-radius: 5px;
+  margin-left: auto;
+  width: 32%;
+}
+
+#content .modal .forgotSubmitBtn {
+  background-color: #333A56;
+  color: white;
+  font-weight: 600;
+  padding: 8px;
+  border: 0px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-radius: 5px;
+}
+
+.newPass p.error {
+  font-size: 0.8rem;
+}
+
+.newPass p.response {
+  font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+  #content .loginForm {
+    margin: 120px 0px;
+    padding: 20px 60px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #content .loginForm {
+    margin: 200px 0px;
+    padding: 20px 60px;
+  }
+}
+
+@media (min-width: 1300px) {
+  #content .loginForm {
+    margin: 80px 0px;
+    padding: 20px 80px;
+  }
+}
+
+@media (min-width: 1600px) {
+  #content .loginForm {
+    margin: 120px 0px;
+    padding: 20px 130px;
+  }
+}
+/*# sourceMappingURL=login.css.map */

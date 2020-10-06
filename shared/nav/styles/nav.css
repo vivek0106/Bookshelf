@@ -1,0 +1,294 @@
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #2f1613;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.navWrapper {
+  height: 100px;
+  background-color: #FCF8D1;
+  color: #333A56;
+  z-index: 1000;
+}
+
+.navWrapper .nav {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navWrapper .nav .logNoti {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.navWrapper .nav .logNoti .login {
+  font-weight: 700;
+}
+
+.navWrapper .nav .logNoti .noti {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.navWrapper .nav .navLogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: auto;
+  color: #333A56;
+}
+
+.navWrapper .nav .navLogo span {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.navWrapper .nav .navLogo i {
+  padding: 0px 5px;
+}
+
+.navWrapper .nav .searchBar {
+  margin: 5px 25px;
+  padding: 5px 12px;
+  border-radius: 5px;
+  background-color: white;
+  width: 100%;
+  -webkit-box-shadow: 0 0 30px #ccc690;
+          box-shadow: 0 0 30px #ccc690;
+}
+
+.navWrapper .nav .searchBar .search input {
+  background-color: white;
+  border: unset;
+  width: 90%;
+}
+
+.navWrapper .nav .searchBar .search input:focus {
+  outline: none;
+}
+
+.navWrapper .nav .navItemWrapper {
+  display: none;
+}
+
+.sideBarOutside {
+  background-color: #000000aa;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
+  display: none;
+  opacity: 1;
+}
+
+.sideBar {
+  background-color: #FCF8D1;
+  height: 100vh;
+  width: 60%;
+  position: fixed;
+  top: 0px;
+  left: -60%;
+  z-index: 20;
+}
+
+.sideBar .sideBarHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60px;
+  padding: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ccc690;
+  font-weight: 700;
+}
+
+.sideBar .sideBarHeader h5 {
+  font-weight: 700;
+  margin: unset;
+  padding: 10px;
+}
+
+.sideBar .sideBarHeader span {
+  font-size: 1.6rem;
+}
+
+.sideBar .sideBarItems {
+  overflow: scroll;
+}
+
+.sideBar .sideBarItems li {
+  display: block;
+  list-style: none;
+  padding: 20px 0px;
+  font-weight: 600;
+  text-align: center;
+  border-bottom: 1px solid #ccc690;
+}
+
+@media (min-width: 620px) {
+  .navWrapper .nav {
+    padding: 10px 40px;
+  }
+  .navWrapper .nav .logNoti {
+    display: none;
+  }
+  .navWrapper .nav .navLogo span {
+    font-size: 1.5rem;
+  }
+  .navWrapper .nav .navItemWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    top: 8px;
+  }
+  .navWrapper .nav .navItemWrapper .navItem {
+    font-weight: 700;
+    padding: 0px 20px;
+    cursor: pointer;
+    color: #333A56;
+  }
+  .navWrapper .nav .navItemWrapper .navItem a {
+    color: #333A56;
+  }
+  .navWrapper .nav .navItemWrapper .navItem span {
+    padding: 8px;
+  }
+  .navWrapper .nav .navItemWrapper .navItem span:hover {
+    border-bottom: 2px solid #ccc690;
+  }
+  .navWrapper .nav .navItemWrapper .navItem span.active {
+    border-bottom: 2px solid #ccc690;
+  }
+  .navWrapper .nav .navItemWrapper .navItem .badge {
+    position: relative;
+    top: -10px;
+    left: -4px;
+  }
+  .navWrapper .nav .navItemWrapper .navItem .dropdown-menu {
+    background-color: #FCF8D1;
+    color: #333A56;
+    border: 0px;
+    padding-bottom: 0px;
+  }
+  .navWrapper .nav .navItemWrapper .navItem .dropdown-menu .dropdown-item {
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  .navWrapper .nav .navItemWrapper .navItem .dropdown-menu .dropdown-item:hover {
+    background-color: #ccc690;
+  }
+  .navWrapper .nav .navItemWrapper .navItem .dropdown-menu .dropdown-item:active {
+    color: #333A56;
+  }
+  .navWrapper .nav .navItemWrapper .navItem .dropdown-menu .dropdown-divider {
+    margin: 0px;
+    height: 1px;
+    width: 100%;
+    background-color: #ccc690;
+  }
+  .navWrapper .nav .searchBar {
+    width: 40%;
+  }
+  .sideBarOutside {
+    opacity: 0;
+  }
+  .sideBarOutside .sideBar {
+    width: 0px;
+  }
+}
+
+@media (min-width: 1313px) {
+  .navWrapper {
+    height: 70px;
+  }
+  .navWrapper .nav .navItemWrapper {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 1391px) {
+  .navWrapper {
+    height: 65px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navWrapper .nav {
+    padding: 10px 200px;
+  }
+  .navWrapper .nav .logNoti {
+    display: none;
+  }
+  .navWrapper .nav .navLogo span {
+    font-size: 1.8rem;
+  }
+  .navWrapper .nav .navItemWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: unset;
+    margin-left: auto;
+  }
+  .navWrapper .nav .navItemWrapper .navItem {
+    font-weight: 700;
+    padding: 0px 10px;
+  }
+  .navWrapper .nav .navItemWrapper .navItem .badge {
+    position: relative;
+    top: -10px;
+    left: -4px;
+  }
+  .navWrapper .nav .searchBar {
+    margin-right: auto;
+    width: 25%;
+  }
+}
+/*# sourceMappingURL=nav.css.map */

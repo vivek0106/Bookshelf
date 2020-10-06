@@ -1,0 +1,256 @@
+@import "../../../color/color.scss";
+::-webkit-scrollbar {
+    width: 6px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color:$darkBrown;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+.navWrapper{
+    height: 100px;
+    background-color: $lightYellow;
+    color: $darkBlue;
+    z-index:1000;
+    .nav{
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .logNoti{
+            display: flex;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            .login{
+                font-weight: 700;
+            }
+            .noti{
+                padding-left: 20px;
+                padding-right:20px;
+            }
+        }
+        .navLogo{
+            display: flex;
+            align-items: center;
+            margin-right: auto;
+            color: $darkBlue;
+            span{
+                font-size: 1.4rem;
+                font-weight: 700;
+            }
+            i{
+                padding: 0px 5px;
+            }
+        }
+        .searchBar{
+            margin: 5px 25px;
+            padding: 5px 12px;
+            border-radius: 5px;
+            background-color:white ;
+            width: 100%;
+            box-shadow: 0 0 30px $darkYellow;
+            .search{                
+                input{
+                    background-color: white;
+                    border: unset;                   
+                    width: 90%;
+                }
+                input:focus{
+                   outline: none;
+                }
+            }
+        }
+        .navItemWrapper{
+            display: none;
+        }
+    }
+}
+.sideBarOutside{
+    background-color: #000000aa;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left:0px;
+    z-index:0;
+    display: none;
+    opacity: 1;
+   }
+    .sideBar{
+        background-color: $lightYellow;
+        height: 100vh;
+        width: 60%;
+        position: fixed;
+        top: 0px;
+        left: -60%;
+        z-index: 20;
+       .sideBarHeader{
+           display: flex;
+           height: 60px;
+           padding: 10px;
+           justify-content: space-between;
+           align-items: center;
+           background-color: $darkYellow;
+           font-weight: 700;
+           h5{
+                font-weight: 700;
+                margin: unset;
+               padding: 10px;
+           }
+           span{
+              font-size: 1.6rem;
+           }
+       }
+       .sideBarItems{
+           overflow:scroll;
+           li{
+               display: block;
+               list-style: none;
+               padding:20px 0px;
+               font-weight: 600;
+               text-align:center;
+               border-bottom: 1px solid $darkYellow;
+           }
+       }
+}
+
+
+
+@media(min-width:620px){
+    .navWrapper{
+        
+        .nav{
+            padding: 10px 40px;
+            .logNoti{
+                display:none;
+            }
+            .navLogo{
+                span{
+                    font-size: 1.5rem;
+                }
+            }
+            .navItemWrapper{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                top: 8px;
+                .navItem{
+                    font-weight:700;
+                    padding: 0px 20px;
+                    cursor: pointer;  
+                    color: $darkBlue;
+                    a{
+                        color: $darkBlue;
+                    }                  
+                    span{
+                        padding: 8px;
+                        &:hover{                            
+                           border-bottom: 2px solid $darkYellow;
+                        }      
+                    }
+                    span.active{
+                        border-bottom: 2px solid $darkYellow;
+                    }
+                    
+                    .badge{
+                        position: relative;
+                        top: -10px;
+                        left:-4px;
+                    }
+                    .dropdown-menu{
+                        background-color: $lightYellow;
+                        color: $darkBlue;
+                        border: 0px;
+                        padding-bottom: 0px;
+                        .dropdown-item{
+                            font-weight: 600;
+                            font-size: 0.9rem;
+                            padding: 8px 12px;
+                            cursor: pointer;
+                            &:hover{
+                                background-color: $darkYellow;
+                            }
+                            &:active{
+                                color: $darkBlue;
+                            }
+                        }
+
+                        .dropdown-divider{
+                            margin:0px;
+                            height: 1px;
+                            width: 100%;
+                            background-color: $darkYellow;
+
+                        }
+                    }
+                }
+            }
+            .searchBar{
+                width: 40%;
+            }
+        }
+    }
+    .sideBarOutside{
+        opacity: 0;
+        .sideBar{
+            width: 0px;
+        }
+    }
+}
+@media(min-width:1313px){
+    .navWrapper{
+        height:70px;
+        .nav{
+            .navItemWrapper{
+                align-items:center;
+            }
+        }
+    }
+}
+@media(min-width:1391px){
+        .navWrapper{
+            height: 65px;
+            align-items: center;
+
+            .nav{
+                padding: 10px 200px;
+                .logNoti{
+                    display:none;
+                }
+                .navLogo{
+                    span{
+                        font-size:1.8rem;
+                    }
+                }
+                .navItemWrapper{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: unset;
+                    margin-left: auto;;
+                    .navItem{
+                        font-weight:700;
+                        padding: 0px 10px;
+                        .badge{
+                            position: relative;
+                            top: -10px;
+                            left:-4px;
+                        }
+                    }
+                }
+                .searchBar{
+                    margin-right: auto;
+                    width: 25%;
+                }
+            }
+        }
+  
+}

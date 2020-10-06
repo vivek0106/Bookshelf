@@ -1,0 +1,17 @@
+span.label{
+    font-size: 1rem;
+    position: relative;
+    top: 30px;
+    left:10px;
+    color: grey;
+}
+span.up{
+    position: relative;
+    top:2px;
+    left:2px;
+    font-weight: 400;
+    color:balck;
+    padding: 5px;
+    font-size: 0.9rem;
+    transition: all 0.1s ease-in-out ;
+}

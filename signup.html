@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/login/login.css">
+    <title>Signup</title>
+</head>
+<body>
+  <section>
+    <div class="container">
+    <div class="card">
+      <div class="card-body">
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <h3 class="text-center">Bookshelf.in</h3>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+         <div class="col-sm-6 col-lg-4">  
+          <form action="signup.php" method="post">     
+            <div id="wrapper">
+              <div class="sigunupform" id="step1">
+                <div class="form-group">
+                  <sapn class="label">First Name</span>
+                  <input type="text" class="form-control transparentColor" name="fname" id="fname">                  
+                  <p class="text-danger d-none error" id="fnameP">First Name is required</p>
+               </div>
+               <div class="form-group">
+                  <sapn class="label">Last Name</span>
+                  <input type="text" class="form-control transparentColor" name="lname" id="lname">
+                  <p class="text-danger d-none error" id="lnameP">Last Name is required</p>
+               </div>
+               <div class="form-group">
+                 <span class="label">Gender</span>
+                 <select class="form-control transparentColor" name="gender" selected="none" id="gender">
+                   <option value="Male">Male</option>
+                   <option value="Female">Female</option>
+                 </select>
+                 <p class="text-danger d-none error" id="genderP">Gender is required</p>
+               </div>
+               <div class="form-group">
+                <button type="button" class="btn btn-secondary d-block ml-auto" name="next1" id="next1">Next</button>
+               </div> 
+              </div>
+    
+    
+    
+              <div class="sigunupform d-none" id="step2">
+                <div class="form-group">
+                  <span class="label">Email</span>
+                  <input type="email" class="form-control transparentColor" name="email" id="email">
+                  <p class="text-danger d-none error" id="emailP">Email is required</p>
+               </div>
+               <div class="form-group">
+                  <span class="label">Contact No.</span>
+                  <input type="number" class="form-control transparentColor" name="contact" maxlength="10" id="contact">
+                  <p class="text-danger d-none error" id="contactP">Contact is required</p>
+               </div>
+               <div class="form-group">
+                  <span class="label">Password</span>
+                  <input type="password" class="form-control transparentColor pass" name="pass" id="pass">
+                  <p class="text-danger d-none error" id="passP">Password is required</p>
+               </div>
+               <div class="form-group">
+                  <span class="label">Confirm Password</span>
+                  <input type="password" class="form-control transparentColor pass" name="cpass" id="cpass">
+                  <p class="text-danger d-none error" id="cpassP"></p>
+                  <input type="checkbox" class="m-0" value="showPass" name="showPass" id="showPass">&nbsp; <span style="font-size:0.8rem; color:#999"> Show Password </span>
+               </div> 
+               <div class="form-group">
+                <button type="button" class="btn btn-outline-secondary" id="back1" name="back1">Back</button>
+                <button type="button" class="btn btn-secondary" name="next2" id="next2">Next</button>
+               </div>
+              </div>   
+    
+              <div class="sigunupform d-none" id="step3">
+                <div class="form-group">
+                  <span class="label">Address Line 1 </span>
+                  <input type="text" class="form-control transparentColor" name="address1" >
+               </div>
+               <div class="form-group">
+                  <span class="label">Address Line 2</span>
+                  <input type="text" class="form-control transparentColor" name="address2" >
+               </div>
+               <div class="form-group">
+                  <span class="label">City</span>
+                  <input type="text" class="form-control transparentColor" name="city" >
+               </div>
+               <div class="form-group">
+                  <span class="label">Pincode</span>
+                  <input type="text" class="form-control transparentColor" name="pincode" >
+               </div> 
+               <div class="form-group">
+                <button type="button" class="btn btn-outline-secondary" id="back2" name="back2">Back</button>
+                <button type="submit" class="btn btn-primary" name="signupSubmit">Submit</button>
+               </div>
+              </div>
+              
+            </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+ 
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+@import "../../color/color.scss";
+html{
+    overflow-x:hidden ;
+}
+body{
+    background-image: url("../../img/bg4.png");
+    background-size: cover;
+    overflow-x: hidden;
+}
+#content{
+    margin-top: 60px;
+    .loginForm{
+        padding:20px 30px;
+        margin: 30px 10px;
+        background-color:#000000a0;
+        border-radius: 8px;
+    }
+    span.label{
+        font-size: 1rem;
+        position: relative;
+        top: 30px;
+        left:10px;
+        color: grey;
+    }
+    i.fa-eye{
+        position: relative;
+        top: -30px;
+        left:90%;
+    }
+    i.fa-eye-slash{
+        display: none;
+        position: relative;
+        top: -30px;
+        left:90%;
+    }
+    span.up{
+        position: relative;
+        top:2px;
+        left:2px;
+        font-weight: 400;
+        color: white;
+        padding: 5px;
+        font-size: 0.9rem;
+        transition: all 0.1s ease-in-out ;
+    }
+    .form-group{
+        margin-bottom: 0px;
+    }
+
+    .loginBtn{
+        background-color: $darkYellow;
+        border: 0px;
+        color: $darkBlue;
+        font-weight:700;
+    }
+    .signupBtn{
+        border: 0px;
+        color: $lightYellow;
+        background-color: $darkBlue;
+    }
+    .gloginBtn{
+        border: 0px;
+        color:$lightYellow;
+        background-color: $darkBlue;
+    }
+    .error{
+        color:#ffa6a6;
+        font-size:0.9rem;
+        padding:10px;
+        margin: 0px;
+        display: none;
+        position: relative;
+        bottom: 10px;
+    }
+    .forgotPassLink{
+        cursor: pointer;
+    }
+    .forgotPassLink:hover{
+        text-decoration: underline;
+    }
+   .modal{
+       background-color: #0000007a;
+       .form-control{
+           margin-bottom: 15px;
+       }
+       span.label{
+       }
+       span.up{
+        color: #444;
+        font-weight: 500;
+        top: -3px;
+       }
+       input{
+           color: black;
+           font-weight: 400;
+       }
+       .nextBtn{
+           display: block;
+           background-color: $darkYellow;
+           color: black;
+           padding: 6px;
+           margin-left: auto;
+           border-radius: 5px;
+           width: 32%;
+           border: 2px solid $darkYellow;        
+       }
+       .backBtn{
+            color: black;
+            border: 2px solid $darkYellow;        
+            padding: 6px;
+            border-radius: 5px;
+            width: 20%;
+            margin-left: 45%;
+       }
+       .signupSubmitBtn{
+        background-color: $darkBlue;
+        border: 2px solid $darkBlue;     
+        color: $lightYellow;
+        border: 0px;
+        padding: 8px;
+        border-radius: 5px;
+        margin-left: auto;
+        width: 32%;
+       }
+       .forgotSubmitBtn{
+           background-color: $darkBlue;
+           color: white;
+           font-weight: 600;
+           padding: 8px;
+           border: 0px;
+           font-weight: 600;
+           font-size: 0.9rem;
+           border-radius: 5px;
+       }
+   }
+    //   #wrapper{
+    //       display: flex;
+    //       flex-direction: row;
+          
+    //   }
+    //   #step1 ,#step2, #step3{
+    //       width: 100%;
+    //   }
+    
+}
+.newPass{
+    p.error{
+        font-size: 0.8rem;
+    }
+    p.response{
+        font-size:0.9rem;
+    }
+}
+@media(min-width:768px){
+    #content{
+        .loginForm{
+            margin: 120px 0px;
+            padding: 20px 60px;
+        }
+    }
+}
+@media(min-width:1024px){
+    #content{
+        .loginForm{
+            margin: 200px 0px;
+            padding: 20px 60px;
+        }
+    }
+}
+
+@media(min-width:1300px){
+    #content{
+        .loginForm{
+            margin: 80px 0px;
+            padding: 20px 80px;
+        }
+    }
+}
+@media(min-width:1600px){
+    #content{
+        .loginForm{
+            margin: 120px 0px;
+            padding: 20px 130px;
+        }
+    }
+}
